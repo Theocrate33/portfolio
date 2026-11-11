@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   .timeline {
+    position: relative; margin: 40px 0; padding-left: 40px; border-left: 3px solid #ccc;
+    }
+    .timeline-item {
+      position: relative;  margin-bottom: 40px; 
+      display: block; /* ensure visible by default */
+    }
+
+    .timeline-date {
+      position: absolute; left: -70px;
+      top: 0;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .timeline-content {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      border-top: 5px solid transparent; /* category color bar */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+
+    .cert-logo {
+      max-width: 80px;
+      margin-bottom: 10px;
+    }
+
+    /* Category colors */
+    .timeline-item.networking .timeline-content { border-color: #007acc; }
+    .timeline-item.sysadmin   .timeline-content { border-color: #6a5acd; }
+    .timeline-item.security   .timeline-content { border-color: #dc3545; }
+    .timeline-item.education  .timeline-content { border-color: #28a745; }
+
+  </style>
+</head>
+<body>
+<h1 class="content-h1">Licencies & Certificates</h1>
+<i style="font-size: 12px;">This section shows Licencies & Certificates earned by Chondjo Théocrate Kashindi</i>
+<hr/>
+<div class="career-obj">
+  <h3 style="background-color: blanchedalmond; padding: 12px 14px;">
+    IT Support Specialist, Systems Administrator, Full-stack WebDev.
+  </h3>
+</div>
+
+<label for="timeline-filter">Filter by competence:</label>
+<select id="timeline-filter">
+  <option value="all">All</option>
+  <option value="networking">Networking</option>
+  <option value="sysadmin">Systems Administration</option>
+  <option value="security">Cybersecurity</option>
+  <option value="education">Education & Learning</option>
+</select>
+
+<div class="timeline">
+
+  <!-- CompTIA Security+ -->
+  <div class="timeline-item security">
+    <div class="timeline-date">2023</div>
+    <div class="timeline-content">
+      <img src="assets/comptia-logo.png" alt="CompTIA Logo" class="cert-logo">
+      <h3>CompTIA Security+</h3>
+      <p>Credential ID: SEC-001234</p>
+    </div>
+  </div>
+
+  <!-- AWS SysOps -->
+  <div class="timeline-item sysadmin">
+    <div class="timeline-date">2024</div>
+    <div class="timeline-content">
+      <img src="assets/aws-logo.png" alt="AWS Logo" class="cert-logo">
+      <h3>AWS Certified SysOps Administrator</h3>
+      <p>Credential ID: XYZ67890</p>
+    </div>
+  </div>
+
+  <!-- Cisco CCNA -->
+  <div class="timeline-item networking">
+    <div class="timeline-date">2025</div>
+    <div class="timeline-content">
+      <img src="assets/cisco-logo.png" alt="Cisco Logo" class="cert-logo">
+      <h3>Cisco Certified Network Associate (CCNA)</h3>
+      <p>Credential ID: ABC12345</p>
+    </div>
+  </div>
+
+  <!-- LinkedIn Learning -->
+  <div class="timeline-item education">
+    <div class="timeline-date">2025</div>
+    <div class="timeline-content">
+      <img src="assets/linkedin-logo.png" alt="LinkedIn Learning Logo" class="cert-logo">
+      <h3>LinkedIn Learning Certificates</h3>
+      <p>Various IT & Web Development Courses</p>
+    </div>
+  </div>
+
+  <!-- Microsoft Learn -->
+  <div class="timeline-item sysadmin">
+    <div class="timeline-date">2026</div>
+    <div class="timeline-content">
+      <img src="assets/microsoft-logo.png" alt="Microsoft Logo" class="cert-logo">
+      <h3>Microsoft Learn Certifications</h3>
+      <p>Azure Administrator, Microsoft 365 Fundamentals</p>
+    </div>
+  </div>
+
+  <!-- TestOut -->
+  <div class="timeline-item security">
+    <div class="timeline-date">2026</div>
+    <div class="timeline-content">
+      <img src="assets/testout-logo.png" alt="TestOut Logo" class="cert-logo">
+      <h3>TestOut Certifications</h3>
+      <p>LabSim: PC Pro, Security Pro</p>
+    </div>
+  </div>
+
+</div>
+<script>
+  document.getElementById("timeline-filter").addEventListener("change", function() {
+    const filter = this.value;
+    document.querySelectorAll(".timeline-item").forEach(item => {
+      if (filter === "all" || item.classList.contains(filter)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+const translations = {
+  en: {
+    home: 'content/en/home.html',
+    bio: 'content/en/about.html',
+    skills: 'content/en/skills.html',
+    worksamp: 'content/en/worksamps.html',
+    studies: 'content/en/studies.html',
+    certificates: 'content/en/certs.html',
+    faithTech: 'content/en/faith_&_tech.html',
+    reflect: 'content/en/reflect_journal.html',
+    resume: 'content/en/resume.html',
+  },
+  fr: {
+    home: 'content/fr/home.html',
+    bio: 'content/fr/about.html',
+    skills: 'content/fr/skills.html',
+    worksamp: 'content/fr/worksamps.html',
+    studies: 'content/fr/studies.html',
+    certificates: 'content/fr/certs.html',
+    faithTech: 'content/en/faith_&_tech.html',
+    reflect: 'content/en/reflect_journal.html',
+    resume: 'content/fr/resume.html',
+  },
+  sw: {
+    home: 'content/sw/home.html',
+    bio: 'content/sw/about.html',
+    skills: 'content/sw/skills.html',
+    worksamp: 'content/sw/worksamps.html',
+    studies: 'content/sw/studies.html',
+    certificates: 'content/sw/certs.html',
+    faithTech: 'content/en/faith_&_tech.html',
+    reflect: 'content/en/reflect_journal.html',
+    resume: 'content/sw/resume.html',
+  }
+};

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>t</title>
+  <style>
+    .case-container{display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px;}
+    .case-study{
+      padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease; background: #f9f9f9;
+    }
+    .case-study:hover{transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); cursor: pointer;}
+    .case-study.networking { background: linear-gradient(135deg, #e6f2ff, #fff); }
+    .case-study.sysadmin   { background: linear-gradient(135deg, #f0e6ff, #fff); }
+    .case-study.dev        { background: linear-gradient(135deg, #e6ffe6, #fff);}
+    .case-study.security   { background: linear-gradient(135deg, #ffe6e6, #fff); }
+    .case-study.education  { background: linear-gradient(135deg, #fff9e6, #fff); }
+    .case-study.leadership { background: linear-gradient(135deg, #e6f9fb, #fff); }
+    .case-study .detail {display: none;}
+    .case-study.open .detail{
+      display: block; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; 
+      background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.3); z-index: 1000;
+      animation: 0.4s ease;
+    }
+    .case-study.open::after{content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;}
+    .case-study.open .detail {display: block;}
+    .case-study .toggle {
+      margin-top: 10px; padding: 6px 12px; border: none; background: #007acc; color: #fff; border-radius: 4px; cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    @keyframes fadeInScale {
+      from {opacity: 0; transform: translate(-50%, -50%) scale(0.9);}
+      to {opacity: 1; transform: translate(50%, 50%) scale(1);}
+    }
+    .detail .close-btn {display: inline-block; margin-top: 10px; padding: 6px 12px; background: #007acc; color: #fff; border-radius: 4px; cursor: pointer;}
+    .case-study .toggle:hover{background: #005fa3;}
+  </style>
+</head>
+<body>
+<h1 class="content-h1">Case Studies</h1>
+<i style="font-size: 12px;">This section talk about case studies performed by Chondjo Théocrate Kashindi</i>
+<hr/>
+<div class="career-obj">
+  <h3 style="background-color: blanchedalmond; padding: 12px 14px;">
+    IT Support Specialist, Systems Administrator, Full-stack WebDev.
+  </h3>
+</div>
+<div class="case-container">
+
+  <div class="case-study" networking>
+    <!--show case: Switch and Router configuration -->
+    <h3>Final Project - Network Configuration & Design Course</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+
+  <div class="case-study" networking>
+    <!--show case: LAN, Switch, subnetting-->
+    <h3>Final Project - Network Fundamentals Course</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+
+  <div class="case-study" sysadmin>
+    <!--show case: Cloud infrastructure knowlodge -->
+    <h3>Final Project - Cloud Computing Essentials Course</h3>
+    <p class="summary"></p>
+    <div class="detail">
+        <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+  
+  <div class="case-study" sysadmin>
+    <!--show case: Sys admin -->
+    <h3>Final Projects - Linux Fundamentals & System Administration Essentials Course</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+
+  <div class="case-study" sysadmin>
+    <!--show case: Maintenance -->
+    <h3>Computers and IT Devices Maintenance</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+
+  <div class="case-study" dev>
+    <!--show case: Development and Coding -->
+    <h3>Web Platform Development</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+
+  <div class="case-study" dev>
+    <!--show case: Database and Data manipulation -->
+    <h3>Database Design and Analysis</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+  
+  <div class="case-study" security>
+    <!--show case: Cybersecurity - wireshark use -->
+    <h3>Packet Capture and Analysis</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+  <div class="case-study" security>
+    <!--show case: Cybersecurity - Penetration Test and Security Enforcemeent Configuration (on Windows and Linux) -->
+    <h3>Packet Capture and Analysis</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+
+  <div class="case-study" education>
+    <!--show case: course adaptability in teaching -->
+    <h3>Education</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+
+  <div class="case-study" leadership>
+    <!--show case: Leadership -->
+    <h3>Leadership</h3>
+    <p class="summary"></p>
+    <div class="detail">
+      <p><strong>Challenge: </strong></p>
+      <p><strong>Solution:</strong></p>
+      <p><strong>Impact</strong></p>
+    </div>
+    <button class="toggle">Read More</button>
+  </div>
+</div>
+</body>
+</html>

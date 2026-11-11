@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<style>
+  /* Skills Section */
+.skills-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 20px; text-align: center;}
+.circle-skill {
+  background: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+ /* transition: transform 0.3s ease, box-shadow 0.4s ease, opacity 0.8s ease; 
+  opacity: 0;
+  transform: scale(0.95); */
+}
+/*.circle-skill.visible { opacity: 1; transform: scale(1); } */
+.circle-skill:hover { transform: translateY(-5px); cursor: pointer; }
+
+.circle-skill svg { width: 100px; height: 100px; margin-bottom: 10px; }
+.circle-skill .bg { fill: none; stroke: #eee; stroke-width: 3.8; }
+.circle-skill .progress {
+  fill: none; stroke-width: 3.8; stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset 1s ease-out; 
+  transform: rotate(-90deg); transform-origin: 50% 50%;
+}
+.percentage { fill: #333; font-size: 0.5em; text-anchor: middle; dominant-baseline: middle; font-weight: bold; }
+
+/* Color coding per category */
+.progress.networking { stroke: #007acc; }
+.progress.sysadmin   { stroke: #6a5acd; }
+.progress.dev        { stroke: #28a745; }
+.progress.security   { stroke: #dc3545; }
+.progress.education  { stroke: #ffc107; }
+.progress.leadership { stroke: #17a2b8; }
+
+.circle-skill h3 {margin: 10px 0; color: #007acc;}
+/* .circle-skill h3, .circle-skill p {
+  opacity: 0; transform: translateY(10px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+} 
+.circle-skill.visible h3, .circle-skill.visible p { opacity: 1; transform: translateY(0); } */
+
+
+/* Background gradients per category */
+.circle-skill.networking { background: linear-gradient(135deg, #e6f2ff, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.networking:hover { background: linear-gradient(135deg, #cce6ff, #fff); }
+.circle-skill.sysadmin   { background: linear-gradient(135deg, #f0e6ff, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.sysadmin:hover   { background: linear-gradient(135deg, #d9ccff, #fff); }
+.circle-skill.dev        { background: linear-gradient(135deg, #e6ffe6, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.dev:hover  { background: linear-gradient(135deg, #cfc, #fff); }
+.circle-skill.security   { background: linear-gradient(135deg, #ffe6e6, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.security:hover   { background: linear-gradient(135deg, #fcc, #fff); }
+.circle-skill.education  { background: linear-gradient(135deg, #fff9e6, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.education:hover  { background: linear-gradient(135deg, #fff2cc, #fff); }
+.circle-skill.leadership { background: linear-gradient(135deg, #e6f9fb, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.leadership:hover { background: linear-gradient(135deg, #ccf2f7, #fff); }
+
+.tools-card{
+  background: linear-gradient(135deg, #e6f9fb, #f9f9f9); transition: background 0.6s ease; 
+  padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.askill{display: inline-block; margin: 5px; padding: auto; position: relative;}
+.askill img{height: 100px;} 
+.askill i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 10px; font-weight: bold;}
+</style>
+</head>
+<body>
+<h1 class="content-h1">Skills & Strengths of Théocrate Kashindi</h1>
+<i style="font-size: 12px;">This section shows tools and skills of Chondjo Théocrate Kashindi</i>
+<hr/>
+<div class="career-obj">
+  <h3 style="background-color: blanchedalmond; padding: 12px 14px;">
+    IT Support Specialist, Systems Administrator, Full-stack WebDev.
+  </h3>
+</div>
+<div class="skills-section">
+  <div class="skills-grid">
+
+    <!-- Networking -->
+    <div class="circle-skill networking">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="progress networking" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <text x="18" y="20.35" class="percentage">0%</text>
+      </svg>
+      <h3>Networking</h3>
+      <p style="margin: 18px 0;">Designing and configuring:</p>
+      <ul style="list-style: none;">
+        <li style="border-top: 1px solid #007acc; padding: 6px 3px;">TCP/IP</li>
+        <li style="border-top: 1px solid #007acc; padding: 6px 3px;">Routing and Switching</li>
+        <li style="border-top: 1px solid #007acc; padding: 6px 3px;">Wireless Networking</li>
+        <li style="border-top: 1px solid #007acc; border-bottom: 1px solid #007acc; padding: 6px 3px;">Network Troubleshooting</li>
+      </ul>
+      <!-- <p>
+        VLANs, NAT, route redistribution, port forwarding, port trunking, DHCP, DNS, RADIUS Wi-Fi,
+        troubleshooting, packet analysis, persistence in problem-solving.
+      </p> -->
+    </div>
+
+    <!-- Cybersecurity -->
+    <div class="circle-skill security">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="progress security" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <text x="18" y="20.35" class="percentage">0%</text>
+      </svg>
+      <h3>Cybersecurity</h3>
+      <p style="margin: 18px 0;">Designing and configuring:</p>
+      <ul style="list-style: none;">
+        <li style="border-top: 1px solid #dc3545; padding: 6px 3px;">Security Fundamentals</li>
+        <li style="border-top: 1px solid #dc3545; padding: 6px 3px;">Access Control</li>
+        <li style="border-top: 1px solid #dc3545; padding: 6px 3px;">Risk Management</li>
+        <li style="border-top: 1px solid #dc3545; border-bottom: 1px solid #dc3545; padding: 6px 3px;">Security Monitoring</li>
+      </ul>
+      <!-- <p>Traffic capture, PenTest, IDS/IPS tools, enforcing security policies</p> -->
+    </div>
+
+    <!-- Systems Administration -->
+    <div class="circle-skill sysadmin">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="progress sysadmin" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <text x="18" y="20.35" class="percentage">0%</text>
+      </svg>
+      <h3 style="margin: auto -5px;">Systems Administration</h3>
+      <p style="margin: 15px 0;">Managing and Maintaining:</p>
+      <ul style="list-style: none;">
+        <li style="border-top: 1px solid #6a5acd; padding: 5px 3px;">Windows Administration</li>
+        <li style="border-top: 1px solid #6a5acd; padding: 5px 3px;">Linux Administration</li>
+        <li style="border-top: 1px solid #6a5acd; padding: 5px 3px;">Server Management</li>
+        <li style="border-top: 1px solid #6a5acd; padding: 5px 3px;">Virtualization</li>
+        <li style="border-top: 1px solid #6a5acd; border-bottom: 1px solid #6a5acd; padding: 5px 3px;">User Support</li>
+      </ul>
+      <!-- <p>
+        Linux (+ AWS EC2), users and groups management, files ownership and permissions, firewall and SSH for access control,
+        Windows Server, Active Directory, GPOs, virtualization.
+      </p> -->
+    </div>
+
+    <!-- Development -->
+    <div class="circle-skill dev">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="progress dev" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <text x="18" y="20.35" class="percentage">0%</text>
+      </svg>
+      <h3>Programming</h3>
+      <p style="margin: 18px 0;">Designing and Coding:</p>
+      <ul style="list-style: none;">
+        <li style="border-top: 1px solid #28a745; padding: 6px 3px;">Python / Django</li>
+        <li style="border-top: 1px solid #28a745; padding: 6px 3px;">JavaScript / React</li>
+        <li style="border-top: 1px solid #28a745; padding: 6px 3px;">HTML & CSS</li>
+        <li style="border-top: 1px solid #28a745; border-bottom: 1px solid #28a745; padding: 6px 3px;">SQL / NoSql</li>
+      </ul>
+
+      <!-- <p>Full-stack web apps, flexible and multilingual platforms, Database design and Data manipulation</p> -->
+    </div>
+
+    <!-- Education -->
+    <div class="circle-skill education">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="progress education" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <text x="18" y="20.35" class="percentage">0%</text>
+      </svg>
+      <h3>Education</h3>
+      <ul style="list-style: none;">
+        <li style="border-top: 1px solid #ffc107; padding: 5px 3px;">Course design</li>
+        <li style="border-top: 1px solid #ffc107; padding: 5px 3px;">Technical writing</li>
+        <li style="border-top: 1px solid #ffc107; padding: 5px 3px;">Teaching & Diplomacy</li>
+        <li style="border-top: 1px solid #ffc107; padding: 5px 3px;">Interactive labs</li>
+        <li style="border-top: 1px solid #ffc107; border-bottom: 1px solid #ffc107; padding: 5px 3px;">Student mentorship</li>
+      </ul>
+    </div>
+
+    <!-- Leadership & Mentorship -->
+    <div class="circle-skill leadership">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="progress leadership" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+        <text x="18" y="20.35" class="percentage">0%</text>
+      </svg>
+      <h3>Leadership & Mentorship</h3>
+      <ul style="list-style: none;">
+        <li style="border-top: 1px solid #17a2b8; padding: 5px 3px;">Communication</li>
+        <li style="border-top: 1px solid #17a2b8; padding: 5px 3px;">Serviceable</li>
+        <li style="border-top: 1px solid #17a2b8; padding: 5px 3px;">Problem-solving</li>
+        <li style="border-top: 1px solid #17a2b8; padding: 5px 3px;">Team leadership</li>
+        <li style="border-top: 1px solid #17a2b8; border-bottom: 1px solid #17a2b8; padding: 5px 3px;">Emotional management</li>
+      </ul>
+    </div>
+
+  </div>  
+</div>
+
+<h1 class="content-h1">Tools and Technologies</h1>
+<div class="tools">
+  <div class="tools-card">
+    <div>
+      <h2>Networking:</h2> 
+      <div class="askill">
+        <img src="../../img/packet_tracer.webp" alt="cisco Packet Tracer icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/testout.webp" alt="TestOut lab icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/nmap-logo-256x256.png" alt="Nmap icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/wireshark-icon.png" alt="Wireshark logo">
+        <i>Wireshark</i>
+      </div>
+      <div class="askill">
+        <img src="../../img/calculator.webp" alt="calculator.net logo">
+        <i>Calculator.net</i>
+      </div>
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Web Development:</h2>
+      <div class="askill">
+        <img src="../../img/python.webp" alt="Python programming language logo">
+        <i>Python</i>
+      </div>
+      <div class="askill">
+        <img src="../../img/django.webp" alt="Django - python library icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/WSGI.png" alt="mod wsgi icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/apache.webp" alt="Apacher server icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/js.webp" alt="JavaScript programming language logo">
+      </div>
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Cloud Computing:</h2>
+      <div class="askill">
+        <img src="../../img/aws.webp" alt="Amazon Web Service logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/aws_ec2.webp" alt="AWS Elastic Compute Cloud icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/azure.webp" alt="Microsoft Azure cloud service logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/ms_intune.webp" alt="Microsoft Intune logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/google_cloud.webp" alt="Google Cloud service icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/terraform.webp" alt="Terraform logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/docker.webp" alt="Docker containarization service icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/github.webp" alt="GitHub logo">
+      </div> 
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Virtualization:</h2>
+      <div class="askill">
+        <img src="../../img/proxmox.webp" alt="Proxmox logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/hyperv1.webp" alt="Mycrsoft Hyper-v icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/vmware.webp" alt="vmWare ESXI icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/virtualbox.webp" alt="VirtualBox logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/vnc.webp" alt="Virtual Network Service icon">
+      </div>
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Databases & Data Manipulation:</h2>
+      <div class="askill">
+        <img src="../../img/sql.png" alt="Structured Query Language logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/sql-server.webp" alt="Microsoft SQL Server logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/t-sql.webp" alt="Transact SQL icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/sqlite.webp" alt="SQLite icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/mysql.webp" alt="MySQL icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/access.webp" alt="Microsoft Access icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/eexcel.webp" alt="Microsoft Excel logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/powerBI.webp" alt="Power BI icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/python.webp" alt="Python programming language logo">
+      </div>
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Systems administration:</h2>
+      <div class="askill">
+        <img src="../../img/aws_ec2.webp" alt="AWS Elastic Compute Cloud icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/ms_intune.webp" alt="Microsoft Intune logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/rdpwebp.webp" alt="Remote Desktop Protocol icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/ssh.webp" alt="Secure Shell icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/vnc.webp" alt="Virtual Network Service icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/powershell.webp" alt="Shell / PowerShell language icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/windowsClient.webp" alt="Microsoft Windows OS client versions icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/ubuntuClient.webp" alt="Linux / Ubuntu OS client version icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/wallhaven-werrxp.jpg" alt="Linux / Kali Linux OS icon">
+        <i>Kali Linux OS</i>
+      </div>
+      <div class="askill">
+        <img src="../../img/fedora.webp" alt="Linux / Fedora OS logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/Ubuntuserver.webp" alt="Linux / Ubuntu server">
+      </div>
+      <div class="askill">
+        <img src="../../img/windowsServer.png" alt="Microsoft Windows Server icon">
+      </div>
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Cybersecurity:</h2>
+      <div class="askill">
+        <img src="../../img/wireshark-icon.png" alt="Wireshark logo">
+        <i>Wireshark</i>
+      </div>
+      <div class="askill">
+        <img src="../../img/aircrack-ng.png" alt="Aircrack-ng logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/nmap-logo-256x256.png" alt="Nmap icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/metasploit.png" alt="Metasploit (msfconsole) logo">
+      </div>
+      <div class="askill">
+        <img src="../../img/wazuh.png" alt="Wazuh logo">
+      </div>
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Maintenance:</h2>
+      <div class="askill">
+        <img src="../../img/PC.png" alt="PC, CC and Laptop maintenance icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/netTrouble.webp" alt="Network troubleshooting">
+      </div>
+      <div class="askill">
+        <img src="../../img/net-troubleshooting.webp" alt="Networks design and toubleshooting">
+      </div> 
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>AI:</h2>
+      <div class="askill">
+        <img src="../../img/AI-copilot.webp" alt="AI copilot icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/chatGPT.webp" alt="AI ChatGPT icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/gemini.webp" alt="AI Gemini icon">
+      </div>
+    </div>
+  </div>
+  <div class="tools-card">
+    <div>
+      <h2>Office:</h2>
+      <div class="askill">
+        <img src="../../img/ms365.webp" alt="Microsft 365 service icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/MS365-icons.webp" alt="MS 365 bundle icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/office.webp" alt="Microsoft Office icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/googledoc.webp" alt="Google Doc icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/googleSheet.webp" alt="Google Sheet icon">
+      </div>
+      <div class="askill">
+        <img src="../../img/libreOffice.webp" alt="Libree Officee icon">
+      </div> 
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>
