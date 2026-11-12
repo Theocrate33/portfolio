@@ -157,6 +157,58 @@ footer a:hover{color:white;}
 }
 .mission-box h3{color:#004f80;margin-bottom:10px;}
 
+
+/* Skills Section */
+
+.skills-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 20px; text-align: center;}
+.circle-skill {
+  background: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+/*.circle-skill.visible { opacity: 1; transform: scale(1); } */
+.circle-skill:hover { transform: translateY(-5px); cursor: pointer; }
+
+.circle-skill svg { width: 100px; height: 100px; margin-bottom: 10px; }
+.circle-skill .bg { fill: none; stroke: #eee; stroke-width: 3.8; }
+.circle-skill .progress {
+  fill: none; stroke-width: 3.8; stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset 1s ease-out; 
+  transform: rotate(-90deg); transform-origin: 50% 50%;
+}
+.percentage { fill: #333; font-size: 0.5em; text-anchor: middle; dominant-baseline: middle; font-weight: bold; }
+
+/* Color coding per category */
+.progress.networking { stroke: #007acc; }
+.progress.sysadmin   { stroke: #6a5acd; }
+.progress.dev        { stroke: #28a745; }
+.progress.security   { stroke: #dc3545; }
+.progress.education  { stroke: #ffc107; }
+.progress.leadership { stroke: #17a2b8; }
+
+.circle-skill h3 {margin: 10px 0; color: #007acc;}
+
+/* Background gradients per category */
+.circle-skill.networking { background: linear-gradient(135deg, #e6f2ff, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.networking:hover { background: linear-gradient(135deg, #cce6ff, #fff); }
+.circle-skill.sysadmin   { background: linear-gradient(135deg, #f0e6ff, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.sysadmin:hover   { background: linear-gradient(135deg, #d9ccff, #fff); }
+.circle-skill.dev        { background: linear-gradient(135deg, #e6ffe6, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.dev:hover  { background: linear-gradient(135deg, #cfc, #fff); }
+.circle-skill.security   { background: linear-gradient(135deg, #ffe6e6, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.security:hover   { background: linear-gradient(135deg, #fcc, #fff); }
+.circle-skill.education  { background: linear-gradient(135deg, #fff9e6, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.education:hover  { background: linear-gradient(135deg, #fff2cc, #fff); }
+.circle-skill.leadership { background: linear-gradient(135deg, #e6f9fb, #f9f9f9); transition: background 0.6s ease; }
+.circle-skill.leadership:hover { background: linear-gradient(135deg, #ccf2f7, #fff); }
+
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+.tools-card{
+  background: linear-gradient(135deg, #e6f9fb, #f9f9f9); transition: background 0.6s ease; 
+  padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.askill{display: inline-block; margin: 5px; padding: auto; position: relative;}
+.askill img{height: 100px;} 
+.askill i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 10px; font-weight: bold;}
+
 @media screen and (max-width:768px){
   header{padding:12px;gap:10px;}
   .logo-text h1{font-size:1rem;}
@@ -223,7 +275,14 @@ footer a:hover{color:white;}
   .about-photo img{max-width:250px;}
   .about-content{width:100%;}
   .career-obj h3{font-size:1rem;text-align:center;}
+
+  .skills-grid{grid-template-columns:1fr;gap:20px;}
+  .circle-skill{padding:15px;}
+  .circle-skill svg{width:85px;height:85px;}
+  .tools{display:grid;grid-template-columns:1fr;gap:15px;}
+  .askill img{height:70px;}
 }
+
 /* ==========================================
    MOBILE PHONES
 ========================================== */
@@ -266,12 +325,15 @@ footer a:hover{color:white;}
   .theo_photo img{width:140px;height:140px;}
 
   .about-photo img{max-width:200px;}
-    .about-content h2{font-size:1.2rem;}
-    .about-content p{font-size:.95rem;}
-    .about-badges span{font-size:.75rem;padding:6px 10px;}
+  .about-content h2{font-size:1.2rem;}
+  .about-content p{font-size:.95rem;}
+  .about-badges span{font-size:.75rem;padding:6px 10px;}
+  
+  .circle-skill h3{font-size:1rem;}
+  .circle-skill p,
+  .circle-skill li{font-size:.85rem;}
+  .askill img{height:55px;}
 }
-
-
 
 
 

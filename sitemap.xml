@@ -2,109 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- English -->
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/en/about.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/en/home.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/en/worksamps.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/en/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/en/skills.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/en/worksamps.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/en/studies.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/en/skills.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/en/certs.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/en/studies.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/en/cinfo.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/en/certs.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/en/resume.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/en/cinfo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://theocrate33.github.io/portofolio/content/en/resume.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- French -->
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/fr/about.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/home.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/fr/worksamps.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/fr/skills.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/worksamps.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/fr/studies.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/skills.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/fr/certs.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/studies.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/fr/cinfo.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/certs.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/fr/resume.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/cinfo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://theocrate33.github.io/portofolio/content/fr/resume.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Kiswahili -->
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/sw/about.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/home.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  <url>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/sw/worksamps.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/worksamps.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/sw/skills.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/skills.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/sw/studies.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/studies.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/sw/certs.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/certs.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/sw/cinfo.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/cinfo.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://theocrate33.github.com/portofolio/content/sw/resume.html</loc>
+    <loc>https://theocrate33.github.io/portofolio/content/sw/resume.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
