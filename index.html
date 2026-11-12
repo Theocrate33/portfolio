@@ -4,43 +4,61 @@
   <meta charset="UTF-8">
   <title>Théocrate Kashindi - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Chondjo Théocrate Kashindi, IT - Systems administrator and educational platform designer">
-  <meta name="keywords" content="IT support specialist, systems administrator, web apps developer, educational platform designer, IT teacher, portfolio, IT help desk, IT engineer">
+  <meta name="description" content="Portfolio of Chondjo Théocrate Kashindi, IT - Systems administrator and Troubleshooter, reliable IT solutions brainstormer, cybersecurity supporter, Web developer, Database designer, Data analyst, and technical consulting tailored to help you stay connected, secure, and productive.">
+  <meta name="keywords" content="IT support specialist, systems administrator, web apps developer, educational platform designer, teacher, mentor, portfolio, IT help desk, IT engineer, Database designer, Data analyst, computer repairer, IT Systems troubleshooting">
   <meta name="auther" content="Chondjo Théocrate Kashindi">
-  <link rel="alternate" hreflang="en" href="https://theocrate33.github.com/portfolio/en/">
-  <link rel="alternate" hreflang="fr" href="https://theocrate33.github.com/portfolio/fr/">
-  <link rel="alternate" hreflang="sw" href="https://theocrate33.github.com/portfolio/sw/">
+  <link rel="alternate" hreflang="en" href="https://theocrate33.github.io/portfolio/en/">
+  <link rel="alternate" hreflang="fr" href="https://theocrate33.github.io/portfolio/fr/">
+  <link rel="alternate" hreflang="sw" href="https://theocrate33.github.io/portfolio/sw/">
   <meta property="og:title" content="Théocrate Kashindi - Portfolio">
-  <meta property="og:description" content="Accredited IT-System administrator and ecommerce / educational platform designer.">
+  <meta property="og:description" content="Accredited IT - Systems administrator and Troubleshooter, reliable IT solutions brainstormer, cybersecurity supporter, Web developer, Database designer, Data analyst, and technical consulting tailored to help you stay connected, secure, and productive.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://theocrate33.github.com/portfolio">
-  <meta property="og:image" content="https://theocrate33.github.com/portfolio/preview.png">
+  <meta property="og:url" content="https://theocrate33.github.io/portfolio">
+  <meta property="og:image" content="https://theocrate33.github.io/portfolio/preview.png">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
   <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/Theocrate-logo.png">
+  <link rel="apple-touch-icon" href="img/Theocrate-logo.png">
 </head>
 <body>
   <header>
     <button id="menu-toggle" aria-label="Open Menu">
       ☰
     </button>
+    <!-- Logo -->
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="img/Theocrate-logo.png" alt="Théocrate Kashindi Logo">
+      </a>
+      <div class="logo-text">
+        <h1>Théocrate Kashindi</h1>
+        <small>Faith • Technology • Impact</small>
+      </div>
+    </div>
     <!-- Languages -->
-    <span id="switch_lang_label">Switch Languages: &nbsp;</span>
-    <select name="language-swicher" id="lang-switcher">
-      <option value="en">English</option>
-      <option value="fr">French</option>
-      <option value="sw">Kiswahili</option>
-    </select>
-    <a href="https://www.linkedin.com/in/chondjo-theocrate-kashindi-771621339/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B4ezXEPC1Sd6KUH6CvvCEsw%3D%3D/" target="_blank" rel="noopener noreferrer">
-      <img src="img/linkedIn.webp" alt="LinkedIn" style="width: 38px; height: 38px; margin: 0 15px;">
-    </a>
-    <a href="https://www.facebook.com/tjesuile" target="_blank" rel="noopener noreferrer">
-      <img src="img/facebook1.webp" alt="Facebook" style="width: 38px; height: 38px; margin: 0 15px;">
-    </a>
+     <div class="header-language">
+      <span id="switch_lang_label">Switch Languages: &nbsp;</span>
+      <select name="language-swicher" id="lang-switcher">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="sw">Kiswahili</option>
+      </select>
+     </div>
+    <!-- Social Links -->
+    <div class="header-socials">
+      <a href="https://www.linkedin.com/in/chondjo-theocrate-kashindi-771621339/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B4ezXEPC1Sd6KUH6CvvCEsw%3D%3D/" target="_blank" rel="noopener noreferrer">
+        <img src="img/linkedIn.webp" alt="LinkedIn" style="width: 38px; height: 38px; margin: 0 15px;">
+      </a>
+      <a href="https://www.facebook.com/tjesuile" target="_blank" rel="noopener noreferrer">
+        <img src="img/facebook1.webp" alt="Facebook" style="width: 38px; height: 38px; margin: 0 15px;">
+      </a>
+    </div>
   </header>
   <div id="overlay"></div>
   <section>
-    <aside class="port-sect-l" id="port-sect-side-l sidebar">
+    <aside class="port-sect-l" id="port-sect-side-l">
       <h2 style="color: #fff;">My Portfolio</h2><i style="font-size: 10px;">Click on a Section to open it</i>
       <button data-section="home" class="folio-l" onclick="opn_l(event, 'home');" id="defaultOpen">Home</button>
   	  <button data-section="bio" class="folio-l" onclick="opn_l(event, 'bio');">About Me</button>
@@ -71,5 +89,27 @@
   <footer></footer>
   <script src="translations.js"></script>
   <script src="app.js"></script>
+  <script>
+    // Toggle between Hide/Show the Side nav from the humberguer menu
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.getElementById("menu-toggle");
+      const sidebar = document.getElementById("port-sect-side-l");
+      const overlay = document.getElementById("overlay");
+
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        overlay.classList.toggle("show");
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        overlay.classList.remove("show");
+      });
+    });
+
+    function opn_projects() {
+      loadSection(section);
+    }
+</script>
 </body>
 </html>

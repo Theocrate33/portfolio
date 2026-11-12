@@ -142,19 +142,3 @@ function initCaseStudies(){
   });
 }
 
-// Toggle between Hide/Show the Side nav from the humberguer menu
-document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.getElementById("menu-toggle");
-  const sidebar = document.getElementById("port-sect-side-l");
-  const overlay = document.getElementById("overlay");
-
-  menuBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-    overlay.classList.toggle("show");
-  });
-
-  overlay.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-    overlay.classList.remove("show");
-  });
-});
