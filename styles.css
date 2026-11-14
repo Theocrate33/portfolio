@@ -157,8 +157,9 @@ footer a:hover{color:white;}
 }
 .mission-box h3{color:#004f80;margin-bottom:10px;}
 
-
-/* Skills Section */
+/* ==========================
+  SKILLS SECTION
+========================== */
 
 .skills-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 20px; text-align: center;}
 .circle-skill {
@@ -200,7 +201,7 @@ footer a:hover{color:white;}
 .circle-skill.leadership { background: linear-gradient(135deg, #e6f9fb, #f9f9f9); transition: background 0.6s ease; }
 .circle-skill.leadership:hover { background: linear-gradient(135deg, #ccf2f7, #fff); }
 
-.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+/* .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;} */
 .tools-card{
   background: linear-gradient(135deg, #e6f9fb, #f9f9f9); transition: background 0.6s ease; 
   padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -208,6 +209,39 @@ footer a:hover{color:white;}
 .askill{display: inline-block; margin: 5px; padding: auto; position: relative;}
 .askill img{height: 100px;} 
 .askill i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 10px; font-weight: bold;}
+
+
+/* ==========================================
+   Projects and Worksample section
+========================================== */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(450px,1fr));gap:25px;}
+  .project-card, .ex-card{
+    background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow:hidden; transition:.3s;
+  }
+  .project-card:hover, .ex-card:hover{transform:translateY(-6px);}
+
+  .project-card img,
+  .project-card iframe,
+  .project-card video{width:100%;height:260px;object-fit:cover;border:none;display:block;}
+
+  .project-info{padding:20px;}
+  .project-info h2{color:#007acc;margin-bottom:12px;}
+  .project-info p{line-height:1.7;margin-bottom:15px;}
+
+  .project-info table{width:100%;border-collapse:collapse;margin-top:15px;}
+  .project-info th{width:140px;background:#f5f9ff;color:#004f80;}
+  .project-info th,
+  .project-info td{padding:10px;border:1px solid #ddd;vertical-align:top;}
+  
+  .project-info a{margin: 20px 5px; color: #007acc; border-radius: 4px; text-decoration: none;}
+  .project-info a:hover{text-decoration: underline;}
+
+  .leadership-summary{
+    background:#f4f9ff;margin-top:25px;padding:25px;border-left:5px solid #007acc;border-radius:10px;
+}
+.leadership-summary h3{color:#004f80;margin-bottom:12px;}
+
 
 @media screen and (max-width:768px){
   header{padding:12px;gap:10px;}
@@ -243,6 +277,8 @@ footer a:hover{color:white;}
 
   .about-container{gap:25px;}
   .about-photo img{max-width:280px;}
+
+  .cards{grid-template-columns:1fr;}
 }
 
 /* ==========================
@@ -281,6 +317,17 @@ footer a:hover{color:white;}
   .circle-skill svg{width:85px;height:85px;}
   .tools{display:grid;grid-template-columns:1fr;gap:15px;}
   .askill img{height:70px;}
+
+  .project-card iframe,
+  .project-card img,
+  .project-card video{height:220px;}
+  .project-info{padding:15px;}
+  .project-info table,
+  .project-info tbody,
+  .project-info tr,
+  .project-info th,
+  .project-info td{display:block;width:100%;}
+  .project-info th{border-bottom:none;background:#eef6ff;}
 }
 
 /* ==========================================
@@ -309,7 +356,13 @@ footer a:hover{color:white;}
   .call_for_action{margin-top:35px;padding:35px 15px;}
   .call_for_action h2{font-size:1.4rem;}
   footer{padding:25px 12px;font-size:.9rem;}
+
+  .project-info h2{font-size:1.2rem;}
+  .project-info p,
+  .project-info td{font-size:.92rem;}
+  .leadership-summary{padding:18px;}
 }
+
 /* ==========================================
    SMALL PHONES
 ========================================== */
@@ -336,65 +389,5 @@ footer a:hover{color:white;}
 }
 
 
-
-.cards{display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
-.project-card{background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
-.project-card img, video {width: 100%; border: 6px; margin-bottom: 15px;}
-.project-card h2 {margin-top: 0; color: #007acc;}
-
-
-
-  /* Skills Section */
-.skills-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 20px; text-align: center;}
-.circle-skill {
-  background: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
- /* transition: transform 0.3s ease, box-shadow 0.4s ease, opacity 0.8s ease; 
-  opacity: 0;
-  transform: scale(0.95); */
-}
-/*.circle-skill.visible { opacity: 1; transform: scale(1); } */
-.circle-skill:hover { transform: translateY(-5px); }
-
-.circle-skill svg { width: 100px; height: 100px; margin-bottom: 10px; }
-.circle-skill .bg { fill: none; stroke: #eee; stroke-width: 3.8; }
-.circle-skill .progress {
-  fill: none; stroke-width: 3.8; stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset 1s ease-out; 
-  transform: rotate(-90deg); transform-origin: 50% 50%;
-}
-.percentage { fill: #333; font-size: 0.5em; text-anchor: middle; dominant-baseline: middle; font-weight: bold; }
-
-/* Color coding per category */
-.progress.networking { stroke: #007acc; }
-.progress.sysadmin   { stroke: #6a5acd; }
-.progress.dev        { stroke: #28a745; }
-.progress.security   { stroke: #dc3545; }
-.progress.education  { stroke: #ffc107; }
-.progress.leadership { stroke: #17a2b8; }
-
-.circle-skill h3 {margin: 10px 0; color: #007acc;}
-/* .circle-skill h3, .circle-skill p {
-  opacity: 0; transform: translateY(10px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-} 
-.circle-skill.visible h3, .circle-skill.visible p { opacity: 1; transform: translateY(0); } */
-
-
-/* Background gradients per category 
-.circle-skill.networking { background: linear-gradient(135deg, #e6f2ff, #f9f9f9); }
-.circle-skill.sysadmin   { background: linear-gradient(135deg, #f0e6ff, #f9f9f9); }
-.circle-skill.dev        { background: linear-gradient(135deg, #e6ffe6, #f9f9f9); }
-.circle-skill.security   { background: linear-gradient(135deg, #ffe6e6, #f9f9f9); }
-.circle-skill.education  { background: linear-gradient(135deg, #fff9e6, #f9f9f9); }
-.circle-skill.leadership { background: linear-gradient(135deg, #e6f9fb, #f9f9f9); }
-
-/* Hover glow per category 
-.circle-skill:hover .progress.networking { filter: drop-shadow(0 0 8px #007acc); }
-.circle-skill:hover .progress.sysadmin   { filter: drop-shadow(0 0 8px #6a5acd); }
-.circle-skill:hover .progress.dev        { filter: drop-shadow(0 0 8px #28a745); }
-.circle-skill:hover .progress.security   { filter: drop-shadow(0 0 8px #dc3545); }
-.circle-skill:hover .progress.education  { filter: drop-shadow(0 0 8px #ffc107); }
-.circle-skill:hover .progress.leadership { filter: drop-shadow(0 0 8px #17a2b8); }
-*/
 
 footer{background: #333; color: #fff; text-align: center; padding: 15px; font-size: 0.9rem; position: fixed; bottom: 0; width: 100%;}
