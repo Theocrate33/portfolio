@@ -215,32 +215,33 @@ footer a:hover{color:white;}
    Projects and Worksample section
 ========================================== */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(450px,1fr));gap:25px;}
-  .project-card, .ex-card{
-    background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    overflow:hidden; transition:.3s;
-  }
-  .project-card:hover, .ex-card:hover{transform:translateY(-6px);}
-
-  .project-card img,
-  .project-card iframe,
-  .project-card video{width:100%;height:260px;object-fit:cover;border:none;display:block;}
-
-  .project-info{padding:20px;}
-  .project-info h2{color:#007acc;margin-bottom:12px;}
-  .project-info p{line-height:1.7;margin-bottom:15px;}
-
-  .project-info table{width:100%;border-collapse:collapse;margin-top:15px;}
-  .project-info th{width:140px;background:#f5f9ff;color:#004f80;}
-  .project-info th,
-  .project-info td{padding:10px;border:1px solid #ddd;vertical-align:top;}
-  
-  .project-info a{margin: 20px 5px; color: #007acc; border-radius: 4px; text-decoration: none;}
-  .project-info a:hover{text-decoration: underline;}
-
-  .leadership-summary{
-    background:#f4f9ff;margin-top:25px;padding:25px;border-left:5px solid #007acc;border-radius:10px;
+.project-card, .ex-card{
+  background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow:hidden; transition:.3s;
 }
-.leadership-summary h3{color:#004f80;margin-bottom:12px;}
+.project-card:hover, .ex-card:hover{transform:translateY(-6px);}
+.content-h2{background: #004f80; font-size: 1rem; padding: 12px 14px; color: #fff; font-weight: bold;}
+
+.project-card img,
+.project-card iframe,
+.project-card video{width:100%;height:260px;object-fit:cover;border:none;display:block;}
+
+.project-info{padding:20px;}
+.project-info h2{color:#007acc;margin-bottom:12px;}
+.project-info p{line-height:1.7;margin-bottom:15px;}
+
+.project-info table{width:100%;border-collapse:collapse;margin-top:15px;}
+.project-info th{width:140px;background:#f5f9ff;color:#004f80;}
+.project-info th,
+.project-info td{padding:10px;border:1px solid #ddd;vertical-align:top;}
+  
+.project-info a{margin: 20px 5px; color: #007acc; border-radius: 4px; text-decoration: none;}
+.project-info a:hover{text-decoration: underline;}
+
+.leadership-summary{
+  background:#f4f9ff;margin-top:25px;padding:25px;border-left:5px solid #007acc;border-radius:10px;
+}
+.leadership-summary h3{color:#004f80;margin:12px;}
 
 
 @media screen and (max-width:768px){
