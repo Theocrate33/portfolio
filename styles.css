@@ -243,6 +243,45 @@ footer a:hover{color:white;}
 }
 .leadership-summary h3{color:#004f80;margin:12px;}
 
+/**====================================== 
+ * FAITH AND TECHNOLOGY SECTION
+ * ======================================= */
+.faith-section{max-width:1200px;margin:auto;}
+.faith-tech-note{
+  background:linear-gradient(135deg,#004f80, #007acc);color:white;padding:30px;border-radius:15px;
+  margin:25px 0;box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.faith-tech-note p{line-height:1.8;}
+.faith-tech-note ul{margin-top:15px;padding-left:25px;}
+.faith-tech-note li{margin-bottom:10px;font-weight:500;}
+.principl_detail{
+  background:#fff;border-radius:15px;padding:30px;margin:30px 0;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);border-top:5px solid #007acc;
+}
+.principl_detail h2{color:#004f80;margin-bottom:20px;}
+.principl_detail p{line-height:1.8;text-align:justify;margin-bottom:15px;}
+.init_materials{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:25px;
+}
+.material{
+  background:#f7fbff;padding:20px;border-radius:10px;border-left:4px solid #007acc;transition:.3s;
+}
+.material:hover{transform:translateY(-4px);box-shadow:0 4px 12px rgba(0,0,0,.1);}
+.material a{font-weight:bold;color:#007acc;text-decoration:none;}
+.material a:hover{text-decoration:underline;}
+.material i,
+.material em{color:#555;line-height:1.6;}
+.inflStat,
+.reflectStat{background:#f4f9ff;padding:30px;margin:30px 0;border-radius:15px;border-left:5px solid #007acc;}
+.inflStat h2,
+.reflectStat h2{color:#004f80;margin-bottom:15px;}
+.principl_detail:nth-of-type(1) h2::before{content:"✦ ";color:#007acc;}
+.principl_detail:nth-of-type(2) h2::before{content:"⚖ ";}
+.principl_detail:nth-of-type(3) h2::before{content:"❤ ";}
+.faith-summary{
+  background:linear-gradient(135deg,#007acc,#004f80);color:white;padding:35px;border-radius:15px;
+  margin-top:40px;text-align:center;
+}
 
 @media screen and (max-width:768px){
   header{padding:12px;gap:10px;}
@@ -280,6 +319,8 @@ footer a:hover{color:white;}
   .about-photo img{max-width:280px;}
 
   .cards{grid-template-columns:1fr;}
+
+  .principl_detail{padding:25px;}
 }
 
 /* ==========================
@@ -329,6 +370,13 @@ footer a:hover{color:white;}
   .project-info th,
   .project-info td{display:block;width:100%;}
   .project-info th{border-bottom:none;background:#eef6ff;}
+
+  .faith-tech-note,
+  .principl_detail,
+  .inflStat,
+  .reflectStat{padding:20px;}
+  .init_materials{grid-template-columns:1fr;}
+  .principl_detail h2{font-size:1.3rem;}
 }
 
 /* ==========================================
@@ -362,6 +410,13 @@ footer a:hover{color:white;}
   .project-info p,
   .project-info td{font-size:.92rem;}
   .leadership-summary{padding:18px;}
+
+  .faith-tech-note{padding:18px;}
+  .faith-tech-note p,
+  .principl_detail p,
+  .inflStat p,
+  .reflectStat p{font-size:.95rem;line-height:1.7;}
+  .material{padding:15px;}
 }
 
 /* ==========================================
