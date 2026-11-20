@@ -284,6 +284,32 @@ footer a:hover{color:white;}
 }
 .faith-summary h2{color:white;}
 
+/*================================
+ * REFLECTION JOURNAL SECTION
+ * ===============================*/
+.reflection-container{ max-width:1000px;margin:auto;}
+
+.reflect{
+  position:relative;background:#ffffff;padding:35px;margin:35px 0;border-radius:18px;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);border-left:6px solid #007acc;transition:.3s;
+}
+.reflect:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.12);}
+.reflect-avatar{display:flex;justify-content:center;margin-bottom:20px;}
+.reflect-avatar-img{
+  width:110px;height:110px;border-radius:50%;object-fit:cover;border:4px solid #007acc;
+  box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+.reflect h2{color:#004f80;margin-bottom:18px;text-align:center;font-size:1.8rem;}
+.reflect p{line-height:1.9;text-align:justify;color:#333;margin-bottom:15px;}
+.reflect a{color:#007acc;font-weight:600;text-decoration:none;}
+.reflect a:hover{text-decoration:underline;}
+.reflect::before{
+  content:"Reflection";position:absolute;top:-12px;right:25px;background:#007acc;color:white;
+  padding:8px 16px;border-radius:25px;font-size:.85rem;font-weight:bold;
+}
+.reflect:nth-child(even){border-left:none;border-right:6px solid #007acc;}
+
+
 @media screen and (max-width:768px){
   header{padding:12px;gap:10px;}
   .logo-text h1{font-size:1rem;}
@@ -323,6 +349,8 @@ footer a:hover{color:white;}
   .cards{grid-template-columns:1fr;}
 
   .principl_detail{padding:25px;}
+
+  .reflect{padding:30px;}
 }
 
 /* ==========================
@@ -388,6 +416,10 @@ footer a:hover{color:white;}
   .reflectStat p{line-height:1.7;}
   .init_material a,
   .init_materials a{display:block;width:fit-content;margin:8px 0;}
+
+  .reflect{padding:22px;margin:25px 0;}
+  .reflect h2{font-size:1.4rem;text-align:left;}
+  .reflect-avatar-img{width:90px; height:90px;}
 }
 
 /* ==========================================
@@ -428,6 +460,11 @@ footer a:hover{color:white;}
   .inflStat p,
   .reflectStat p{font-size:.95rem;line-height:1.7;}
   .material{padding:15px;}
+
+  .reflect{padding:18px;}
+  .reflect p{ font-size:.95rem;line-height:1.8;}
+  .reflect-avatar-img{width:75px;height:75px;}
+  .reflect::before{font-size:.75rem;padding:6px 12px;}
 }
 
 /* ==========================================
