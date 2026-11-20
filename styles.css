@@ -248,6 +248,7 @@ footer a:hover{color:white;}
  * ======================================= */
 /* .faith-section{max-width:1200px;margin:auto;} */
 
+.faith-section{display: block !important;}
 .principl_detail{
   background:white;padding:30px;margin-bottom:30px;border-radius:15px;border-left:6px solid #007acc;
   box-shadow:0 6px 18px rgba(0,0,0,.08);
