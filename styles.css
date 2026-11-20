@@ -249,33 +249,39 @@ footer a:hover{color:white;}
 /* .faith-section{max-width:1200px;margin:auto;} */
 
 .principl_detail{
-  background:#fff;border-radius:15px;padding:30px;margin:30px 0;
-  box-shadow:0 4px 15px rgba(0,0,0,.08);border-top:5px solid #007acc;
+  background:white;padding:30px;margin-bottom:30px;border-radius:15px;border-left:6px solid #007acc;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
-.principl_detail h2{color:#004f80;margin-bottom:20px;}
-.principl_detail p{line-height:1.8;text-align:justify;margin-bottom:15px;}
+.principl_detail h2{color:#004f80;margin-bottom:20px;position:relative;}
+.principl_detail p{line-height:1.9;text-align:justify;margin-bottom:15px;}
+
+.init_material,
 .init_materials{
-  display:grid;grid-template-columns:repeat(2, 1fr);gap:25px; margin-top:30px;
+  margin-top:20px;background:#f7fbff;border-radius:12px;padding:20px;border:1px solid #d7e8f6;
 }
-.material{
-  background:#f7fbff;padding:20px;border-radius:10px;border-left:4px solid #007acc;transition:.3s;
+.init_material a,
+.init_materials a{
+   display:inline-block;background:#eaf5ff;color:#0065aa;font-weight:600;text-decoration:none;
+   padding:8px 14px;border-radius:25px;margin:5px;
 }
-.material:hover{transform:translateY(-4px);box-shadow:0 4px 12px rgba(0,0,0,.1);}
-.material a{font-weight:bold;color:#007acc;text-decoration:none;}
-.material a:hover{text-decoration:underline;}
-.material i,
-.material em{color:#555;line-height:1.6;}
+.init_material p,
+.init_materials p{
+  padding-left:18px;border-left:3px solid #007acc;margin-top:15px;color:#555;
+  font-style:italic;line-height:1.7;
+}
+
 .inflStat,
-.reflectStat{background:#f4f9ff;padding:30px;margin:30px 0;border-radius:15px;border-left:5px solid #007acc;}
-.inflStat h2,
-.reflectStat h2{color:#004f80;margin-bottom:15px;}
-.principl_detail:nth-of-type(1) h2::before{content:"✦ ";color:#007acc;}
-.principl_detail:nth-of-type(2) h2::before{content:"⚖ ";}
-.principl_detail:nth-of-type(3) h2::before{content:"❤ ";}
-.faith-summary{
-  background:linear-gradient(135deg,#007acc,#004f80);color:white;padding:35px;border-radius:15px;
-  margin-top:40px;text-align:center;
+.reflectStat{
+  background:#f4f9ff;padding:30px;border-radius:15px;margin:30px 0;border-left:6px solid #007acc;
 }
+.inflStat h2,
+.reflectStat h2{color:#004f80;}
+
+.faith-summary{
+  background:linear-gradient(135deg,#007acc, #004f80);color:white;padding:40px;
+  border-radius:18px;text-align:center;margin-top:40px;box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.faith-summary h2{color:white;}
 
 @media screen and (max-width:768px){
   header{padding:12px;gap:10px;}
@@ -297,8 +303,9 @@ footer a:hover{color:white;}
   .faith-tech-note h3,
   .professional_values h2{font-size:1.1rem;}
   .values-list li{padding:10px;}
-}
 
+
+}
 
 /* ==========================================
    LARGE TABLETS
@@ -368,9 +375,18 @@ footer a:hover{color:white;}
   .faith-tech-note,
   .principl_detail,
   .inflStat,
-  .reflectStat{padding:20px;}
+  .reflectStat,
+  .faith-summary{padding:20px;}
+  .principl_detail h2{font-size:1.3rem;}
+
   .init_materials{grid-template-columns:1fr;}
   .principl_detail h2{font-size:1.3rem;}
+  .faith-tech-note p,
+  .principl_detail p,
+  .inflStat p,
+  .reflectStat p{line-height:1.7;}
+  .init_material a,
+  .init_materials a{display:block;width:fit-content;margin:8px 0;}
 }
 
 /* ==========================================
