@@ -73,6 +73,13 @@ main.folio_window{flex: 1; padding: 30px; background: #fff; box-shadow: inset 0 
 .btn-secondary:hover {background:#2563eb; color:white;}
 .btn-secondary a:hover{color:white;}
 
+.mission-box{
+  margin:20px 0 25px;padding:20px;background:#fff7e8;border-left:5px solid #007acc;
+  border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.mission-box h3{color:#004f80;margin-bottom:12px;font-size:1.2rem;}
+.mission-box p{line-height:1.8;color:#444;}
+
 .mission-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px;}
 .offer-cards{background:white;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,.08);transition:.3s;}
 .offer-cards:hover{transform:translateY(-8px);}
@@ -200,6 +207,15 @@ footer a:hover{color:white;}
 .circle-skill.education:hover  { background: linear-gradient(135deg, #fff2cc, #fff); }
 .circle-skill.leadership { background: linear-gradient(135deg, #e6f9fb, #f9f9f9); transition: background 0.6s ease; }
 .circle-skill.leadership:hover { background: linear-gradient(135deg, #ccf2f7, #fff); }
+
+.skills-values{margin:40px 0;padding:25px;background:#f8fafc;border-radius:10px;border:1px solid #dbe7f2;}
+.skills-values h2{color:#004f80;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #007acc;}
+.skills-values ul{list-style:none;padding:0;}
+.skills-values li{
+  background:#fff;margin-bottom:12px;padding:12px 15px;border-left:4px solid #007acc;
+  border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,.05);line-height:1.6;
+}
+.skills-values li:last-child{margin-bottom:0;}
 
 /* .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;} */
 .tools-card{
