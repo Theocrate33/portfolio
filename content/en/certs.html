@@ -10,13 +10,13 @@
     IT Support Specialist • Systems Administrator • Full-Stack Web Developer
   </h3>
 </div>
-<section>
+<div>
   <div class="cert-stats">
     <div><strong>30+</strong><span>Certificates</span></div>
     <div><strong>5</strong><span>Domains</span></div>
     <div><strong>3+</strong><span>Years Learning</span></div>
   </div>
-  
+
   <div class="cert-header">
     <input
         type="text"
@@ -409,19 +409,4 @@
     </div>
   </div>
 
-</section>
-<script>
-  const searchInput = document.getElementById("certSearch");
-
-  searchInput.addEventListener("keyup", () => {
-    const value = searchInput.value.toLowerCase();
-    document.querySelectorAll(".cert-card").forEach(card => {
-      const domains = card.dataset.domain.toLowerCase();
-      if(domains.includes(value)){
-        card.style.display = "block";
-      }else{
-        card.style.display = "none";
-      }
-    });
-  });
-</script>
+</div>
