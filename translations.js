@@ -28,8 +28,8 @@ const translations = {
     worksamp: 'content/sw/worksamps.html',
     studies: 'content/sw/studies.html',
     certificates: 'content/sw/certs.html',
-    faithTech: 'content/fr/faith_&_tech.html',
-    reflect: 'content/fr/reflect_journal.html',
+    faithTech: 'content/sw/faith_&_tech.html',
+    reflect: 'content/sw/reflect_journal.html',
     resume: 'content/sw/resume.html',
   }
 };
