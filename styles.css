@@ -368,6 +368,52 @@ main.folio_window{flex: 1; padding: 30px; background: #fff; box-shadow: inset 0 
 }
 .reflect:nth-child(even){border-left:none;border-right:6px solid #007acc;}
 
+/* ===========================
+   RESUME SECTION
+   =========================== */
+
+.resume-section{width:100%;margin:20px auto;display:flex;flex-direction:column;gap:25px;}
+/* Intro Card */
+.resume-intro{
+  padding:20px;background:#f8fafc;border-left:5px solid #007acc;border-radius:10px;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+.resume-intro h2{color:#004f80;margin-bottom:12px;}
+.resume-intro p{line-height:1.8;color:#444;}
+/* Download Buttons */
+.resume-actions{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;align-items:center;}
+.resume-actions a{text-decoration:none;}
+.resume-actions .btn-primary,
+.resume-actions .btn-secondary{
+  display:inline-block;padding:12px 20px;border-radius:8px;font-weight:600;text-align:center;transition:.3s;
+}
+.resume-actions .btn-primary{background:#007acc;color:#fff;}
+.resume-actions .btn-primary:hover{background:#005fa3;transform:translateY(-2px);}
+.resume-actions .btn-secondary{background:#fff7e8;color:#004f80;border:1px solid #007acc;}
+.resume-actions .btn-secondary:hover{background:#eaf6ff;transform:translateY(-2px);}
+.resume-highlights{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin:25px 0;
+  padding:20px;background:#f8fafc;border-radius:12px;border:1px solid #dbe7f2;
+}
+.resume-highlights div{
+  background:#fff;padding:15px;text-align:center;color:#004f80;font-weight:600;border-radius:8px;
+  border-top:4px solid #007acc;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:.3s;
+}
+.resume-highlights div:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.12);}
+/* PDF Container */
+.pdf-container{
+  width:100%;background:#fff;border-radius:12px;
+  overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.1);border:1px solid #e5e7eb;
+}
+.pdf-container iframe{width:100%;height:700px;border:none;}
+/* Cover Letter */
+.cover-ltter{
+  margin-top:15px;padding:20px;background:#f8fafc;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+.cover-ltter h2{color:#004f80;margin-bottom:15px;padding-bottom:10px;border-bottom:2px solid #007acc;}
+/* Optional Summary */
+.resume-summary{padding:20px;background:#fff7e8;border-left:4px solid #007acc;border-radius:8px;}
+.resume-summary p{line-height:1.8;}
 
 @media screen and (max-width:768px){
   header{padding:12px;gap:10px;}
@@ -389,8 +435,6 @@ main.folio_window{flex: 1; padding: 30px; background: #fff; box-shadow: inset 0 
   .faith-tech-note h3,
   .professional_values h2{font-size:1.1rem;}
   .values-list li{padding:10px;}
-
-
 }
 
 /* ==========================================
@@ -479,6 +523,16 @@ main.folio_window{flex: 1; padding: 30px; background: #fff; box-shadow: inset 0 
   .reflect{padding:22px;margin:25px 0;}
   .reflect h2{font-size:1.4rem;text-align:left;}
   .reflect-avatar-img{width:90px; height:90px;}
+
+  .resume-section{gap:20px;}
+  .resume-intro,
+  .cover-ltter{padding:15px;}
+  .resume-actions{flex-direction:column;}
+  .resume-actions .btn-primary,
+  .resume-actions .btn-secondary{ width:100%;}
+  .pdf-container iframe{height:500px;}
+  .resume-highlights{grid-template-columns:1fr;padding:15px;}
+  .resume-highlights div{padding:12px;}
 }
 
 /* ==========================================
