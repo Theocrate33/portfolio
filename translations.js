@@ -17,8 +17,8 @@ const translations = {
     worksamp: 'content/fr/worksamps.html',
     studies: 'content/fr/studies.html',
     certificates: 'content/fr/certs.html',
-    faithTech: 'content/en/faith_&_tech.html',
-    reflect: 'content/en/reflect_journal.html',
+    faithTech: 'content/fr/faith_&_tech.html',
+    reflect: 'content/fr/reflect_journal.html',
     resume: 'content/fr/resume.html',
   },
   sw: {
@@ -28,8 +28,8 @@ const translations = {
     worksamp: 'content/sw/worksamps.html',
     studies: 'content/sw/studies.html',
     certificates: 'content/sw/certs.html',
-    faithTech: 'content/en/faith_&_tech.html',
-    reflect: 'content/en/reflect_journal.html',
+    faithTech: 'content/fr/faith_&_tech.html',
+    reflect: 'content/fr/reflect_journal.html',
     resume: 'content/sw/resume.html',
   }
 };
