@@ -44,6 +44,10 @@ function loadSection(section) {
       if (section === 'studies') {
         initCaseStudies();
       }
+      // initiate the filter function
+      if(section === 'certificates'){
+        initCertificateFilter();
+      }
     })
     .catch(err => {
       document.getElementById(section).innerHTML = '<p>Error loading content.</p>';
