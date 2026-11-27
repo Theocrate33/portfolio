@@ -142,3 +142,19 @@ function initCaseStudies(){
   });
 }
 
+// Cerficates filters
+function initCertificateFilter(){
+  const searchBox = document.getElementById("certSearch")
+  if(!searchBox) return;
+  searchBox.addEventListener("input", function(){
+    const query = this.value.toLowerCase().trim();
+    const cards = document.querySelectorAll(".cert-card");
+    cards.forEach(card => {
+      const domain = card.dataset.domain?.toLowerCase() || "";
+      const title = card.querySelector("h4")?.textContent.toLowerCase() || "";
+      const issuer = card.querySelector(".issuer")?.textContent.toLowerCase() || "";
+      const match = domain.includes(query) || title.includes(query) || issuer.includes(query);
+      card.style.display = match ? "" : "none";
+    });
+  });
+}
